@@ -7,12 +7,13 @@ let collection = [];
 function addToCollection(title, artist, yearPublished) {
     console.log('in addToCollection:', title, artist, year);
     // TODO - create new object using 3 parameters as properties
-    const addToCollection = {
-        title: 
-        age:
-        year: 
-    } // end object addToCollection
-
+    const album = {};
+    album.title = '';
+    album.artist = '';
+    album.yearPublished = undefined;
+    // TODO - add new object to end of collection array
+    collection.push(album);
+    // TODO - return new object
+    return album;
 } // end variable addToCollection
 
-// TODO - Create 
