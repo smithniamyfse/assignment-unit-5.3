@@ -1,31 +1,30 @@
 console.log('***** Music Collection *****')
 
-// TODO - create variable collection assign empty array
+// Create variable collection assign empty array
 let collection = [];
 
-// TODO - add function addToCollection with 3 parameters
+// Add function addToCollection with 3 parameters
 function addToCollection(title, artist, yearPublished) {
-    // TODO - create new object using 3 parameters as properties
+    // Create new object using the object literal syntax and 3 parameters as properties
     const album = {
-        title: title,
-        artist: artist,
-        yearPublished: yearPublished
+        title,
+        artist,
+        yearPublished,
     }; // end album
-    // TODO - add new object to end of collection array
-    collection.push(album);
-    // TODO - return new object
-    return album;
+    // Add object album to end of collection array
+        collection.push(album); 
+    // Return object album
+        return album;
 } // end addToCollection
 
-// TODO - test the addToCollection function with 6 various albums
-addToCollection('Apologies to Queen Mary', 'Wolf Parade', 2005);
+// Test the addToCollection function with 6 various albums and log returned value
+console.log(addToCollection('Apologies to Queen Mary', 'Wolf Parade', 2005));
+console.log(addToCollection('Apologies to Queen Mary', 'Wolf Parade', 2005));
+console.log(addToCollection('In Evening Air', 'Future Islands', 2010));
+console.log(addToCollection('The Immaculate Collection', 'Madonna', 1990));
+console.log(addToCollection('Astro Lounge', 'Smash Mouth', 1999));
+console.log(addToCollection('Torches', 'Foster the People', 2011));
+console.log(addToCollection('Easter', 'Patti Smith', 1978));
 
-addToCollection('In Evening Air', 'Future Islands', 2010);
-
-addToCollection('The Immaculate Collection', 'Madonna', 1990);
-
-addToCollection('Astro Lounge', 'Smash Mouth', 1999);
-
-addToCollection('Torches', 'Foster the People', 2011);
-
-addToCollection('Easter', 'Patti Smith', 1978);
+// Log the collection array
+console.log(collection);
