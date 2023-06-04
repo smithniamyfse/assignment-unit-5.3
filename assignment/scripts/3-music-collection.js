@@ -28,3 +28,8 @@ console.log(addToCollection('Easter', 'Patti Smith', 1978));
 
 // Log the collection array
 console.log(collection);
+
+// Add function showCollection 
+function showCollection () {
+
+} // end showCollection
