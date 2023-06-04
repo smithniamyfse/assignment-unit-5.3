@@ -12,9 +12,9 @@ function addToCollection(title, artist, yearPublished) {
         yearPublished,
     }; // end album
     // Add object album to end of collection array
-        collection.push(album); 
+    collection.push(album);
     // Return object album
-        return album;
+    return album;
 } // end addToCollection
 
 // Test the addToCollection function with 6 various albums and log returned value
@@ -34,12 +34,18 @@ console.log(albumSix);
 // Log the collection array
 console.log(collection);
 
-// Add function showCollection with collection array as its parameter
-function showCollection(collection) {
+// Add function showCollection with parameter collectionName
+function showCollection(collectionName) {
     // Log the number of albums in the collection
-    console.log('Number of albums in the collection:', collection.length);
-    for (let i = 0; i < collection.length; i++) {
-      console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
+    console.log('Number of albums in the collection:', collectionName.length);
+    for (let i = 0; i < collectionName.length; i++) {
+        console.log(`${collectionName[i].title} by ${collectionName[i].artist}, published in ${collectionName[i].yearPublished}`);
     } // end loop over array
-  }
-  showCollection(collection);
+}
+
+// Test 1: Testing showCollection by sending collection array variable
+showCollection(collection); // end Test 1
+// Test 2: Testing showCollection by adding new album to collection
+let albumSeven = addToCollection('Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 1967);
+console.log(albumSeven);
+showCollection(collection); // end Test 2
